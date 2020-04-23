@@ -1,0 +1,57 @@
+<!-- >> angular-sidedrawer-getting-started-html
+
+//android.icon="res://icon" android.iconVisibility="always
+
+-->
+<ActionBar title="shopping">  <!--"ic_menu_back"-->
+<NavigationButton android.systemIcon="ic_menu_back" (tap)="open()"></NavigationButton>
+</ActionBar>
+
+<RadSideDrawer tkExampleTitle tkToggleNavButton>
+
+
+    <GridLayout tkDrawerContent rows="56, *">
+        <StackLayout class="sideTitleStackLayout">
+
+            <Label text="Items" ></Label>
+        </StackLayout>
+        <ScrollView row="1">
+            <StackLayout class="sideStackLayout">
+   <!--
+Dropdown List widget
+<MDL:MaterialDropdownList col="1" class="tops"
+itemsSeparatorColor="transparent" itemsRowHeight="30"
+items={{tops}} title={{category}} selectedIndex="{{ selectedtopIndex }}"
+
+
+
+>
+</MDL:MaterialDropdownList> -->
+
+
+
+
+                <Label text="Tops" (tap)="ViewTops()" class="sideLabel "> </Label>
+                <Label text="Shirts" class="sideLabel"> </Label>
+                <Label text="T-shirt" class="sideLabel"> </Label>
+                <Label text="Dresses" class="sideLabel "></Label>
+                <Label text="Bottoms"  (tap)="ViewBottoms()" class="sideLabel"></Label>
+                <Label text="shoes" class="sideLabel"></Label>
+
+                <Label text="Close Drawer" color="lightgray" padding="10" alignment="horizontal"  (tap)="onCloseDrawerTap()"></Label>
+            </StackLayout>
+        </ScrollView>
+    </GridLayout>
+
+    <StackLayout tkMainContent>
+        <Label text="Contact" ></Label>
+        <Label [text]="mainContentText" textWrap="true" class="drawerContentText"></Label>
+      <!--  <Button text="OPEN DRAWER" (tap)="openDrawer()" class="drawerContentButton"></Button> -->
+   <!---  <VideoPlayer:Video id="nativeVideoPlayer"
+      controls="true" loop="true" autoplay="false" height="280"
+      src="~/videos/big_buck_bunny.mp4" />   -->
+
+
+    </StackLayout>
+</RadSideDrawer>
+<!-- << angular-sidedrawer-getting-started-html -->

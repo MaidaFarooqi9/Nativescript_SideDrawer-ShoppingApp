@@ -1,0 +1,48 @@
+
+
+/* >> sidedrawer-getting-started-angular-css */
+
+
+.sideStackLayout{
+
+
+      width: 100%;
+        height: 100%;
+        background-color: red;
+        animation-name: example;
+        animation-duration: 5s;
+        animation-iteration-count: 9999;
+}
+
+      @keyframes example {
+        from {background-color: red;}
+        to {background-color: pink;}
+      }
+button {
+    font-size: 15;
+   align-content: center;
+}
+
+RadSideDrawer.drawerContentText {
+    font-size: 13;
+    padding: 10;
+}
+
+RadSideDrawer .drawerContentButton {
+    margin: 10;
+    align-content: center;
+}
+
+.sideTitleStackLayout {
+    text-align: center;
+    vertical-align: center;
+}
+
+.sideLabel {
+    padding: 10;
+}
+
+.sideLightGrayLabel {
+    background-color: lightgray;
+}
+/* << sidedrawer-getting-started-angular-css */
