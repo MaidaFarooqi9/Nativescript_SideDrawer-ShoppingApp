@@ -1,0 +1,31 @@
+
+.heading{
+
+    text-align: center;
+    font-weight: bold;
+    color: blueviolet;
+}
+
+
+.I1{
+margin-top:30px;
+margin-left:8px;
+padding: 8px;
+background-color: yellow;
+
+}
+.I2{
+margin-top:30px;
+margin-left:8px;
+padding: 8px;
+background-color: lime;
+
+}
+
+.I3{
+    margin-top:30px;
+margin-left:8px;
+padding: 8px;
+background-color: aqua;
+
+}

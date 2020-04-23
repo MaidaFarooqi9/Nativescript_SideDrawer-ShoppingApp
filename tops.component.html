@@ -1,0 +1,58 @@
+
+
+<ActionBar title="Tops"></ActionBar>
+<!--
+<StackLayout>
+    <GridLayout rows="auto, auto, *"
+                columns="auto, *">
+        <DropDown #dd
+                  backroundColor="red"
+          itemsTextAlignment="center"
+                  [items]="items"
+                  [(ngModel)]="selectedIndex"
+                  (selectedIndexChanged)="onchange($event)"
+                  (opened)="onopen()"
+                  (closed)="onclose()"
+                  row="0"
+                  colSpan="2"></DropDown>
+        <Label text="Selected Index:"
+               row="1"
+               col="0"
+               fontSize="18"
+               verticalAlignment="bottom"></Label>
+        <TextField [text]="selectedIndex"
+                   row="1"
+                   col="1"></TextField>
+    </GridLayout>
+</StackLayout>
+-->
+
+
+<GridLayout>
+        <ScrollView>
+<StackLayout>
+
+        <Label class="heading" text="contact#03360242719"></Label>
+        <Image class="I1"
+            src="https://ae01.alicdn.com/kf/H2dc7badeb79e41ae83413122aedb87ab5/LUSLOS-MARVEL-Series-T-Shirt-Fashion-Superheros-cartoon-print-White-Tshirt-Women-Casual-Short-Sleeve-O.jpg"
+            height="200 " width="200" (tap)="Top1()">
+        </Image>
+        <Label class="heading" text="Marvel Shirt Rs:700"></Label>
+        <Label [text]="x"></Label>
+        <Image class="I2"
+            src="https://rugbyfootballshirt.com/images/2019/04/Marvel-Endgame-Avengers-Infinity-War-parody-Friends-tv-show-shirt_3-1.jpg"
+            height="200" width="200" (tap)="Top2()">
+        </Image>
+        <Label class="heading" text="Avengers Shirt Rs:750"></Label>
+        <Label [text]="y"></Label>
+        <Image class="I3"
+            src="https://images-na.ssl-images-amazon.com/images/I/719HTQjbQuL._AC_UL1500_.jpg"
+            height="200" width="200"  (tap)="Top3()">
+        </Image>
+        <Label class="heading" text="Captain America Rs:800"></Label>
+        <Label [text]="z"></Label>
+        <Button text="confirm" (tap)="TopConfirm()"></Button>
+</StackLayout>
+</ScrollView>
+</GridLayout>
+
